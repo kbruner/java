@@ -117,6 +117,8 @@ the .tar.gz.
 * `node['java']['oracle']['jce']['home']` - Where the JCE policy files should be installed to
 * `node['java']['oracle']['jce'][java_version]['checksum']` - Checksum of the JCE policy zip. Can be sha256 or md5
 * `node['java']['oracle']['jce'][java_version]['url']` - URL which to download the JCE policy zip
+* `node['java']['ark_timeout']` - timeout in seconds for http connect for Oracle download (passed to curl)
+* `node['java']['shell_timeout']` - total timeout in seconds for Oracle download
 
 Recipes
 -----

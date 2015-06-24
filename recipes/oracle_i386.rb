@@ -58,6 +58,7 @@ java_ark "jdk-alt" do
   bin_cmds bin_cmds
   retries node['java']['ark_retries']
   retry_delay node['java']['ark_retries']
+  shell_timeout node['java']['shell_timeout']
   action :install
   default false
 end
